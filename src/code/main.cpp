@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "..\\header\\CheckXmlFile.h"
+#include "..\\header\\XMLtoJSON.h"
 #include "..\\header\\CompressingXML.h"
 // hello world
 using namespace std;
@@ -15,7 +16,6 @@ int main()
 {
     string xmlfile = readFile("..\\..\\input\\sample.xml");
     Checkxmlfile(xmlfile);
-    while(1);
 }
 
 
