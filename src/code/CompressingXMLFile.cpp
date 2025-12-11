@@ -16,7 +16,7 @@ string CompressingXMLFile(string xmlfile){
     return compressedXML;
 }
 
-string BytePairEncoding(string compressedXML) {
+pair<string, map<string, char>> BytePairEncoding(string compressedXML) {
     map<string, char> pairToSymbol;
     char replace = 128; 
     string mostPair =" ";
@@ -60,6 +60,6 @@ string BytePairEncoding(string compressedXML) {
         replace++;
     }
     
-    return compressedXML;
+    return make_pair(compressedXML, pairToSymbol);
 }
 
