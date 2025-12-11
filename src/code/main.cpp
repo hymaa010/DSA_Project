@@ -2,7 +2,7 @@
 #include "..\\header\\CheckXmlFile.h"
 #include "..\\header\\XMLtoJSON.h"
 #include "..\\header\\CompressingXML.h"
-
+// hello world
 using namespace std;
 
 string readFile(const string& path) {
@@ -16,7 +16,6 @@ int main()
 {
     string xmlfile = readFile("..\\..\\input\\sample.xml");
     Checkxmlfile(xmlfile);
-    while(1);
 }
 
 
