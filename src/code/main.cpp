@@ -18,11 +18,15 @@ int main()
     //Checkxmlfile(xmlfile);
     string s = CompressingXMLFile(xmlfile);
     auto e = BytePairEncoding(s);
+    
     cout << "Removed Spaces :\n\n" << s <<endl<<endl;
+
     cout << "Byte Pair :\n\n" << e.first <<endl<<endl;
+
     ofstream outFile("compresed_file.xml");
     outFile << e.first;
     outFile.close();
 }
+
 
 
