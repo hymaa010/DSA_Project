@@ -21,10 +21,8 @@ int main()
 {
     string xmlfile = readFile("..\\..\\input\\sample.xml");
     Checkxmlfile(xmlfile);
-<<<<<<< HEAD
     string minifiedXML = Minifyingxmlfile(xmlfile);
     cout << "Minified XML:\n" << minifiedXML << endl;
-=======
     
     //Checkxmlfile(xmlfile);
     string s = CompressingXMLFile(xmlfile);
@@ -34,7 +32,6 @@ int main()
     ofstream outFile("compresed_file.xml");
     outFile << e.first;
     outFile.close();
->>>>>>> 4013b6eb241bcee4540605f3a29120d960d38a39
 }
 
 
