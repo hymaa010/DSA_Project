@@ -13,7 +13,6 @@ int main()
 {
     string xmlfile = readFile("..\\..\\input\\sample.xml");
     Checkxmlfile(xmlfile);
-    while(1);
 }
 
 
