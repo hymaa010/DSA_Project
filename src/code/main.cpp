@@ -26,10 +26,10 @@ int main()
     // ALL FUNCTION CALLS CAN BE TESTED HERE //
     ///////////////////////////////////////////
 
-    // // 1. Minifying XML File
-    // string minifiedXML = Minifyingxmlfile(xmlfile);
-    // cout << "Minified XML:\n" << minifiedXML << endl;
-    // cout << "-----------------------------------\n\n";
+    // 1. Minifying XML File
+    string minifiedXML = Minifyingxmlfile(xmlfile);
+    cout << "Minified XML:\n" << minifiedXML << endl;
+    cout << "-----------------------------------\n\n";
     
     // 2. Converting XML to Tree Structure
     Node* root = XMLtoTree(xmlfile);
@@ -53,7 +53,7 @@ int main()
     auto e = BytePairEncoding(s);
     cout << "Removed Spaces :\n\n" << s <<endl<<endl;
     cout << "Byte Pair :\n\n" << e.first <<endl<<endl;
-    ofstream outFile("..\\..\\outputfiles\\compresed_file.xml");
+    ofstream outFile("..\\..\\outputfiles\\compresed_file.comp");
     outFile << e.first;
     outFile.close();
     cout << "-----------------------------------\n\n";
