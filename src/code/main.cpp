@@ -20,25 +20,25 @@ string readFile(const string& path) {
 int main()
 {
     string xmlfile = readFile("..\\..\\input\\sample.xml");
-    Checkxmlfile(xmlfile);
+    //Checkxmlfile(xmlfile);
 
     ///////////////////////////////////////////
     // ALL FUNCTION CALLS CAN BE TESTED HERE //
     ///////////////////////////////////////////
 
-    // 1. Minifying XML File
-    string minifiedXML = Minifyingxmlfile(xmlfile);
-    cout << "Minified XML:\n" << minifiedXML << endl;
-    cout << "-----------------------------------\n\n";
+    // // 1. Minifying XML File
+    // string minifiedXML = Minifyingxmlfile(xmlfile);
+    // cout << "Minified XML:\n" << minifiedXML << endl;
+    // cout << "-----------------------------------\n\n";
     
-    // 2. Converting XML to Tree Structure
-    Node* root = XMLtoTree(xmlfile);
-    printTree(root);
-    cout << "-----------------------------------\n\n";
+    // // 2. Converting XML to Tree Structure
+    // Node* root = XMLtoTree(xmlfile);
+    // printTree(root);
+    // cout << "-----------------------------------\n\n";
     
-    // 3. Checking XML File
-    Checkxmlfile(xmlfile);
-    cout << "-----------------------------------\n\n";
+    // // 3. Checking XML File
+    // Checkxmlfile(xmlfile);
+    // cout << "-----------------------------------\n\n";
     
     // 3. Compressing XML File
     string s = CompressingXMLFile(xmlfile);
@@ -48,7 +48,7 @@ int main()
 
     cout << "Byte Pair :\n\n" << e.first <<endl<<endl;
 
-    ofstream outFile("compresed_file.xml");
+    ofstream outFile("compresed_file.comp");
     outFile << e.first;
     outFile.close();
     cout << "-----------------------------------\n\n";
