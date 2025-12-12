@@ -19,7 +19,7 @@ string readFile(const string& path) {
 
 int main()
 {
-    string xmlfile = readFile("..\\..\\XMLfiles\\sample.xml");
+    string xmlfile = readFile("XMLfiles\\sample.xml");
 
     ///////////////////////////////////////////
     // ALL FUNCTION CALLS CAN BE TESTED HERE //
@@ -44,7 +44,7 @@ int main()
     auto e = BytePairEncoding(s);
     cout << "Removed Spaces :\n\n" << s <<endl<<endl;
     cout << "Byte Pair :\n\n" << e.first <<endl<<endl;
-    ofstream outFile("..\\..\\XMLfiles\\compresed_file.xml");
+    ofstream outFile("XMLfiles\\compresed_file.xml");
     outFile << e.first;
     outFile.close();
     cout << "-----------------------------------\n\n";
@@ -52,7 +52,7 @@ int main()
     // 4. Decompressing XML File
     string decompressed = DecompressingXMLFile(e.first, e.second);
     cout << "Decompressed XML :\n\n" << decompressed << endl<<endl;
-    ofstream outFile2("..\\..\\XMLfiles\\decompressed_file.xml");
+    ofstream outFile2("XMLfiles\\decompressed_file.xml");
     outFile2 << decompressed;
     outFile2.close();
     cout << "-----------------------------------\n\n";
