@@ -34,9 +34,23 @@ int main()
     Node* root = XMLtoTree(xmlfile);
     printTree(root,0);
     cout << "-----------------------------------\n\n";
+<<<<<<< Updated upstream
     
     // 3. Checking XML File
     Checkxmlfile(xmlfile);
+=======
+
+    // 3.Converting XML to JSON
+    cout << "JSON Output\n" << XMLtoJSON(root);
+
+    ofstream outjson("outputfiles\\JSON_output.json");
+    outjson << XMLtoJSON(root);
+    outjson.close();
+    cout << "\n-----------------------------------\n\n";
+
+    // 4. Checking XML File
+    cout << Checkxmlfile(xmlfile);
+>>>>>>> Stashed changes
     cout << "-----------------------------------\n\n";
     
     // 3. Compressing XML File
