@@ -1,5 +1,5 @@
 #include "../header/PrettifyingXMLFile.h"
-#include "..\\header\\MinifyingXMLFile.h"
+#include "..//header//MinifyingXMLFile.h"
 
 using namespace std;
 

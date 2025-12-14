@@ -66,7 +66,7 @@ pair<string, map<unsigned char, string>> BytePairEncoding(string compressedXML) 
         
         // Replace 
         string compressedXML_new = "";
-        for (int i = 0; i < compressedXML.length()-1; i++) {
+        for (int i = 0; i < compressedXML.length(); i++) {
             if (compressedXML[i] == mostPair[0] && compressedXML[i + 1] == mostPair[1]) {
                 compressedXML_new += replace;
                 i++;
@@ -79,6 +79,6 @@ pair<string, map<unsigned char, string>> BytePairEncoding(string compressedXML) 
         compressedXML = compressedXML_new;
         replace++;
     }
-
+    //cout<<compressedXML;
     return make_pair(compressedXML, pairToSymbol);
 }
