@@ -5,6 +5,9 @@
 A C++ desktop tool for processing XML files that represent a social network.
 The project supports **CLI mode** and a **ready-to-run GUI mode** (no Qt installation required).
 
+<img width="1422" height="1017" alt="Screenshot 2025-12-22 174819" src="https://github.com/user-attachments/assets/a8dee968-ff3b-4a80-a886-95678762a090" />
+
+
 ---
 
 ## 📁 **Project Structure**
